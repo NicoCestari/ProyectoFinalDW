@@ -1,0 +1,10 @@
+@mixin estilos1 ($text: center, $weight: bold, $size: 25px){
+    text-align: $text;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin estilos2 ($weigh: bold, $size: 30px){
+    font-weight: $weigh;
+    font-size: $size;
+}

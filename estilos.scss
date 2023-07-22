@@ -1,0 +1,74 @@
+$color_1: black;
+$color_2: rgb(6, 137, 252);
+$font-family_1: "Amatic SC";
+$font-family_2: sans-serif;
+$background-color_1: #ffffff;
+
+/*Seccion de Contenido*/
+/*Seccion Ids*/
+* {
+	margin: 0;
+	padding: 0;
+}
+@import 'anidaciones';
+body {
+	height: 100%;
+}
+.nav {
+	background-color: $background-color_1;
+	width: 100%;
+	height: 20%;
+}
+.Ubi {
+	h5 {
+		font-size: 30px;
+	}
+}
+#Petshop {
+	font-family: $font-family_1;
+	color: $color_1;
+}
+#Acuarios {
+    @include estilos2;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+#Contacto {
+    @include estilos2;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+#Nosotros {
+	h3 {
+        @include estilos1;
+		font-family: $font-family_2;
+		color: $color_1;
+	}
+}
+#Novedades {
+	h1 {
+		@include estilos1;
+        font-family: $font-family_2;
+		color: $color_1;
+	}
+}
+a {
+	&:hover {
+		color: $color_2 !important;
+	}
+}
+p {
+	font-size: 20px;
+}
+i {
+	font-size: 35px;
+}
+h5 {
+	font-size: 30px;
+}
+li {
+	&:hover {
+		color: $color_2 !important;
+		cursor: pointer;
+	}
+}
